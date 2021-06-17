@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 class="head">Calculator</h1>
+    <table>
+        <tr>
+            <th colspan="8" class="display">
+                <input type="text" disabled name="" id="val">
+            </th>
+        </tr>
+        <tr>
+            <td class="grey">2nd</td>
+            <td class="grey">(</td>
+            <td class="grey">)</td>
+            <td class="grey">%</td>
+            <td class="grey">mc</td>
+            <td class="grey">m<sup>+</sup></td>
+            <td class="grey">m<sup>-</sup></td>
+            <td class="grey">mr</td>
+        </tr>
+        <tr>
+            <td class="grey">1/x</td>
+            <td class="grey">x <sup>2</sup></td>
+            <td class="grey">x <sup>3</sup></td>
+            <td class="grey">y <sup>3</sup></td>
+            <td class="brown" onclick="del()">C</td>
+            <td class="brown" onclick="clearVal()">Del</td>
+            <td class="brown" onclick="setValue('/')">/</td>
+            <td class="brown" onclick="setValue('*')">x</td>
+        </tr>
+        <tr>
+            <td class="grey">x!</td>
+            <td class="grey">!</td>
+            <td class="grey">#y</td>
+            <td class="grey">log</td>
+            <td class="black" onclick="setValue(7)">7</td>
+            <td class="black" onclick="setValue(8)">8</td>
+            <td class="black" onclick="setValue(9)">9</td>
+            <td class="brown" onclick="setValue('-')">-</td>
+        </tr>
+        <tr>
+            <td class="grey">sin<sup>-1</sup></td>
+            <td class="grey">cos<sup>-1</sup></td>
+            <td class="grey">tan<sup>-1</sup></td>
+            <td class="grey">log<sub>2</sub></td>
+            <td class="black" onclick="setValue(4)">4</td>
+            <td class="black" onclick="setValue(5)">5</td>
+            <td class="black" onclick="setValue(6)">6</td>
+            <td class="brown" onclick="setValue('+')">+</td>
+        </tr>
+        <tr>
+            <td class="grey">sinh<sup>-1</sup></td>
+            <td class="grey">cosh<sup>-1</sup></td>
+            <td class="grey">tanh<sup>-1</sup></td>
+            <td class="grey">2<sup>x</sup></td>
+            <td class="black" onclick="setValue(1)">1</td>
+            <td class="black" onclick="setValue(2)">2</td>
+            <td class="black" onclick="setValue(3)">3</td>
+            <td class="orange" onclick="setResult(0)" rowspan="2">=</td>
+        </tr>
+        <tr>
+            <td class="grey">Deg</td>
+            <td class="grey">^</td>
+            <td class="grey">EE</td>
+            <td class="grey">Rand</td>
+            <td  class="black" onclick="setValue(0)" colspan="2">0</td> 
+            <td class="black" onclick="setValue('.')">.</td>
+            
+        </tr>
+    </table>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
